@@ -1,4 +1,5 @@
 #ifndef UNSIGNED
+#define UNSIGNED
 
 void ucharIntervalli(unsigned char sade, unsigned char askel);
 void ushortIntervalli(unsigned short sade, unsigned short askel);

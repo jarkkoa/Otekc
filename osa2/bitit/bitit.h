@@ -1,4 +1,5 @@
 #ifndef BITIT
+#define BITIT
 
 void scharBitit(signed char x);
 void shortBitit(short int x);

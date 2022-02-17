@@ -1,6 +1,7 @@
 /* Ympyrän geometria */
 
 #ifndef GEOMETRIA
+#define GEOMETRIA
 
 const long double PII;
 
