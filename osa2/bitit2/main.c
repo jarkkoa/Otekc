@@ -1,24 +1,26 @@
 #include <stdio.h>
 #include "bitit.h"
 
+#define LUKU 2015
+
 int main(int argc, char *argv[])
 {
-    int LUKU = 2015;
+    signed char testi1 = LUKU;
+    short testi2 = LUKU;
+    int testi3 = LUKU;
+    long int testi4 = LUKU;
 
-    kaannaScharBitit((signed char*)&LUKU);
-    printf("%i\n", LUKU);
+    kaannaScharBitit(&testi1);
+    printf("%i\n", testi1);
 
-    LUKU = 2015;
-    kaannaShortBitit((short*)&LUKU);
-    printf("%i\n", LUKU);
+    kaannaShortBitit(&testi2);
+    printf("%i\n", testi2);
 
-    LUKU = 2015;
-    kaannaIntBitit(&LUKU);
-    printf("%i\n", LUKU);
+    kaannaIntBitit(&testi3);
+    printf("%i\n", testi3);
 
-    LUKU = 2015;
-    kaannaLongBitit((long*)&LUKU);
-    printf("%i\n", LUKU);
+    kaannaLongBitit(&testi4);
+    printf("%li\n", testi4);
 
     return 0;
 }
