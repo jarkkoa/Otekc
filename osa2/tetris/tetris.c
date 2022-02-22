@@ -26,8 +26,9 @@ void paivita(char ruudukko[20][10])
                     ruudukko[i][j] = ruudukko[i-1][j];
                     ruudukko[0][j] = ' ';
                 }
-                row++;
             }
+
+            row++;
         }
     }
 }
